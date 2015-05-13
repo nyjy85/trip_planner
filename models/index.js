@@ -40,8 +40,8 @@ var Restaurant = mongoose.model('Restaurant', restaurantSchema);
 
 
 module.exports = {
-	Place:Place,
-	Hotel:Hotel,
-	Restaurant:Restaurant,
-	ThingToDo:ThingToDo
+	Place: Place,
+	Hotel: Hotel,
+	Restaurant: Restaurant,
+	ThingToDo: ThingToDo
 };

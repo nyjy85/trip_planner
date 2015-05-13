@@ -3,4 +3,32 @@
 {% block content %}
     <h1>{{title}}</h1>
     <p>Welcome to {{title}}</p>
+
+    <select>
+    {% for hotel in all_hotels %}
+    	<option value="{{hotel.name}}">
+    		{{ hotel.name }}
+    	</option>
+    {% endfor %}
+    </select>
+
+    <select>
+    	{% for restauraunt in all_restaurants %}
+    		<option value="{{restaurant.name}}">
+    			{{ restauraunt.name }}
+    		</option>
+    	{% endfor %}
+    </select>
+
+    <select>
+    	{% for thing in all_things_to_do%}
+    		<option value="{{thing.name}}">
+    			{{ thing.name }}
+    		</option>
+    	{% endfor %}
+    </select>
+
+
+
+
 {% endblock %}
