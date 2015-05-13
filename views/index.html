@@ -1,32 +1,53 @@
 {% extends "layout.html" %}
 
 {% block content %}
-    <h1>{{title}}</h1>
-    <p>Welcome to {{title}}</p>
+    <h5>Hotels</h5>
+    <ul class="list-unstyled list-inline" >
+	    <li>
+		    <select class="form-control selectClass">
+		    {% for hotel in all_hotels %}
+		    	<option value="{{hotel.name}}">
+		    		{{ hotel.name }}
+		    	</option>
+		    {% endfor %}
+		    </select>
+		</li>
+	    <li>
+	    	<button type="button" class="btn btn-primary">+</button>
+	    </li>
+	</ul>
 
-    <select>
-    {% for hotel in all_hotels %}
-    	<option value="{{hotel.name}}">
-    		{{ hotel.name }}
-    	</option>
-    {% endfor %}
-    </select>
+    <h5>Restaurants</h5>
+    <ul class="list-unstyled list-inline" >
+    	<li>
+		    <select class="form-control selectClass">
+		    	{% for restauraunt in all_restaurants %}
+		    		<option value="{{restaurant.name}}">
+		    			{{ restauraunt.name }}
+		    		</option>
+		    	{% endfor %}
+		    </select>
+		</li>
+		<li>
+	    	<button type="button" class="btn btn-primary">+</button>
+	    </li>
+	</ul>
 
-    <select>
-    	{% for restauraunt in all_restaurants %}
-    		<option value="{{restaurant.name}}">
-    			{{ restauraunt.name }}
-    		</option>
-    	{% endfor %}
-    </select>
-
-    <select>
-    	{% for thing in all_things_to_do%}
-    		<option value="{{thing.name}}">
-    			{{ thing.name }}
-    		</option>
-    	{% endfor %}
-    </select>
+    <h5>Things To Do</h5>
+    <ul class="list-unstyled list-inline" >
+    	<li>
+		    <select class="form-control selectClass" id="things">
+		    	{% for thing in all_things_to_do%}
+		    		<option value="{{thing.name}}">
+		    			{{ thing.name }}
+		    		</option>
+		    	{% endfor %}
+		    </select>
+		</li>
+    	<li>
+	    	<button type="button" class="btn btn-primary">+</button>
+	    </li>
+    </ul>
 
 
 

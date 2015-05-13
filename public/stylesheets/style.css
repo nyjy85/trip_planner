@@ -305,3 +305,54 @@ textarea {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+
+* {
+  box-sizing: border-box; }
+
+select {
+  width: 50%; }
+
+ul.nav a {
+  color: #FFFFFF; }
+
+ul.nav a:hover {
+  color: #F8FFF4;
+  background-color: #302730; }
+
+.pagesLabel {
+  display: inline-block; }
+
+.navbar {
+  background-color: #474350;
+  margin-bottom: 0px; }
+
+#left-block {
+  background-color: #F8FFF4;
+  height: 100vh;
+  padding-right: 0;
+  width: max-width; }
+
+#right-block {
+  float: right;
+  padding-right: 0;
+  height: 67%; }
+
+#top-right {
+  background-color: #FCFFEB;
+  padding-bottom: 25px;
+  padding-top: 15px;
+  width: 100%; }
+
+#bottom-right {
+  background-color: #474350;
+  width: 100%; }
+
+.panel-body {
+  background-color: #FCFFEB;
+  height: 150%; }
+
+#map-canvas {
+  height: 100vh; }
+
+.selectClass {
+  width: 200px; }

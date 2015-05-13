@@ -1,1 +1,78 @@
 @import "normalize";
+
+// $navbar-color: #6D0839;
+// $left-block-color: #25271E;
+// $top-right-color: #D0E799;
+// $panel-body-color: #D8C358;
+// $panel-top-color: #D8C358;
+
+$navbar-color: #474350;
+$left-block-color: #F8FFF4;
+$top-right-color: #FCFFEB;
+$panel-body-color: #FCFFEB;
+$panel-top-color: #474350;
+$navbar-hover-color: #F8FFF4;
+$navbar-hover-background-color: #302730;
+*{
+	box-sizing: border-box;
+}
+
+select{
+	width:50%;
+}
+
+ul.nav a{
+	color:#FFFFFF;
+}
+ul.nav a:hover{
+	color:$navbar-hover-color;
+	background-color:$navbar-hover-background-color;
+}
+
+.pagesLabel{
+	display:inline-block;
+}
+
+.navbar {
+    background-color: $navbar-color;
+    margin-bottom: 0px;
+}
+
+#left-block {
+	background-color: $left-block-color;
+	height: 100vh;
+	padding-right: 0;
+	width:max-width;
+}
+
+#right-block{
+	float: right;
+	padding-right: 0;
+
+	height:67%;
+}
+
+#top-right{
+	background-color: $top-right-color;
+	padding-bottom: 25px;
+	padding-top: 15px;
+	width: 100%;
+}
+
+#bottom-right{
+	background-color: $panel-top-color;
+	width: 100%;
+}
+
+.panel-body{
+	background-color: $panel-body-color;
+	height:150%;
+}
+
+#map-canvas{
+	height: 100vh;
+}
+
+.selectClass{
+	width: 200px;
+}
