@@ -1,0 +1,17 @@
+{
+  "name": "Trip",
+  "version": "",
+  "homepage": "https://github.com/nyjy85/trip_planner",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.4"
+  }
+}
